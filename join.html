@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Youth Runs</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: #005fa3;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .form-container {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1155px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      iframe {
+        height: 1300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Join Youth Runs 🏃🏽‍♂️</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="join.html">Join</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="form-container">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfK5YH47XBn_Uqy6oBNasHDcCD657sP63vQGh3DIlQxI0eyhg/viewform?embedded=true" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
+</body>
+</html>
