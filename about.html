@@ -2,120 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - Youth Runs</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f8fb;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+      color: #222;
       margin: 0;
       padding: 0;
     }
 
-    nav {
-      background-color: #0d47a1;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    nav a {
+    header {
+      background-color: #0077cc;
       color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
     }
 
     .section {
+      padding: 2rem 1rem;
       max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      margin: auto;
     }
 
-    .section h2 {
+    .photo-section {
+      margin-bottom: 3rem;
       text-align: center;
-      color: #1a237e;
     }
 
-    .highlight h3,
-    .mission h3 {
-      color: #0d47a1;
-      margin-top: 30px;
-    }
-
-    .highlight ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .highlight li {
-      margin-bottom: 40px;
-    }
-
-    .team-photo,
-    .medal-photo {
+    .photo-section img {
       width: 100%;
-      max-height: 320px;
-      object-fit: cover;
-      margin-top: 10px;
+      max-width: 700px;
       border-radius: 10px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-section img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
 
     .caption {
-      font-size: 0.95rem;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
       color: #444;
-      margin-top: 4px;
       font-style: italic;
     }
 
-    .mission p {
-      font-style: italic;
-      margin-top: 10px;
+    .journey-text {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-left: 6px solid #0077cc;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.4rem;
+      }
+      .section {
+        padding: 1rem;
+      }
+      .journey-text {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="join.html">Join</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <header>About Omar – Youth Runs</header>
 
-  <div class="section">
-    <h2>About the Founder</h2>
-    <p>Hey! I’m Omar Shanyour, a student-athlete at Westview High School in San Diego and founder of Youth Runs. I created this club to give other youth a free, fun, and positive space to grow in track and field — whether you're new or experienced.</p>
-
-    <div class="highlight">
-      <h3>🏅 My Journey</h3>
-      <ul>
-        <li>
-          <img src="your-first-image.jpg" alt="4x1 Relay Team" class="team-photo" />
-          <div class="caption">Me and my 4x1 team — second fastest in school history.</div>
-        </li>
-        <li>
-          <img src="your-second-image.jpg" alt="300m Hurdles Podium" class="medal-photo" />
-          <div class="caption">3rd Place – Palomar League Finals (300m Hurdles)</div>
-        </li>
-        <li>
-          <img src="your-third-image.jpg" alt="CIF Finals" class="medal-photo" />
-          <div class="caption">6th Overall at CIF Finals – 110m Hurdles</div>
-        </li>
-        <li>
-          <img src="your-fourth-image.jpg" alt="Mt. SAC Relays Victory" class="medal-photo" />
-          <div class="caption">Mt. SAC Shuttle Hurdle Relay — Led my team to 3rd in CA, 20th in the U.S.</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="mission">
-      <h3>💬 Why I Started Youth Runs</h3>
-      <p>After years of growing as an athlete myself, I wanted to give back. Youth Runs is about more than medals — it’s about confidence, teamwork, and pushing each other forward.</p>
-    </div>
+  <div class="section journey-text">
+    I started running track in 5th grade. The first year, I didn’t even make the team. I was crushed.
+    But I kept working. After I got more exposure to the sport, I made the team and kept improving.
+    Today, I run for Westview High School. I've competed in multiple events and grown not just as an athlete, but as a teammate and leader.
+    I started Youth Runs because I want others to experience the same growth, joy, and confidence that track gave me.
   </div>
+
+  <div class="section photo-section">
+    <img src="track1.jpg" alt="4x1 relay team"/>
+    <div class="caption">My 4x1 relay team – we’re 2nd in school history. 🏃🏽‍♂️🔥</div>
+  </div>
+
+  <div class="section photo-section">
+    <img src="track2.jpg" alt="300m hurdles podium"/>
+    <div class="caption">Placed 3rd in Palomar League for 300m hurdles. 💪</div>
+  </div>
+
+  <div class="section photo-section">
+    <img src="track3.jpg" alt="CIF 110m hurdles"/>
+    <div class="caption">6th overall in CIF for the 110m hurdles. Big moment! 🏅</div>
+  </div>
+
+  <div class="section photo-section">
+    <img src="track4.jpg" alt="Mt. SAC victory"/>
+    <div class="caption">Winning Mt. SAC, leading my squad to 3rd in the state (shuttle hurdles) and 20th nationally! 🥇🌎</div>
+  </div>
+
 </body>
 </html>
