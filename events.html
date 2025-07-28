@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Youth Runs – Events</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2a2a2a;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    .event-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .event-section h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+    }
+
+    .event-video {
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-style: italic;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>Youth Runs – Weekly Events</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="join.html">Join</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="event-section">
+  <h2>Week 1 – July 27, 2025</h2>
+  <!-- If your video is uploaded to YouTube, replace the src with the YouTube embed -->
+  <!-- Example YouTube: <iframe class="event-video" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+
+  <!-- If hosting the video yourself -->
+  <video class="event-video" controls>
+    <source src="week1video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <p class="caption">Our first week in action! Thank you to everyone who came out — we’re just getting started. 🧡</p>
+</section>
+
+<!-- You can copy this section and change the title/video for Week 2, Week 3, etc. -->
+
+</body>
+</html>
