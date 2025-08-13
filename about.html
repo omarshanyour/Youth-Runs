@@ -2,115 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meet the Team - Youth Runs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Youth Runs</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e3f2fd, #fce4ec);
-      color: #222;
+      font-family: "Segoe UI", sans-serif;
+      background: #0e1a2b;
+      color: #f0f0f0;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #1976d2;
+      background-color: #1e3c72;
       color: white;
-      padding: 1.8rem;
+      padding: 1.5rem;
       text-align: center;
       font-size: 2rem;
     }
 
-    .team-nav {
+    nav {
+      background-color: #162c47;
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      padding: 1.5rem;
+      gap: 2rem;
+      padding: 0.75rem 0;
     }
 
-    .team-nav button {
-      background-color: #ffffff;
-      border: 2px solid #1976d2;
-      border-radius: 50px;
-      padding: 0.7rem 1.8rem;
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc70;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .role-buttons {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .role-buttons button {
+      background-color: #00c2cb;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 30px;
       font-size: 1rem;
-      font-weight: 600;
-      color: #1976d2;
       cursor: pointer;
-      transition: 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+      color: #ffffff;
     }
 
-    .team-nav button:hover {
-      background-color: #1976d2;
-      color: white;
+    .role-buttons button:hover {
+      background-color: #04d4df;
       transform: scale(1.05);
     }
 
-    .profile {
+    .role-section {
       display: none;
-      max-width: 850px;
-      margin: 2rem auto;
-      background-color: #fff;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
     }
 
-    .profile h2 {
-      color: #1976d2;
+    .role-section.active {
+      display: block;
     }
 
     ul {
-      line-height: 1.8;
+      padding-left: 1.5rem;
+    }
+
+    .photo-section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .photo-section img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-section img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .caption {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.6rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>Meet the Youth Runs Team</header>
+  <header>About – Youth Runs</header>
 
-  <div class="team-nav">
-    <button onclick="showProfile('headCoach')">Head Coach</button>
-    <button onclick="showProfile('assistantCoach')">Assistant Coach</button>
-    <button onclick="showProfile('cameraMan')">Camera Man</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="join.html">Join</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="section role-buttons">
+    <button onclick="showRole('head')">🏅 Head Coach</button>
+    <button onclick="showRole('assistant')">💪 Assistant Coach</button>
+    <button onclick="showRole('camera')">🎥 Camera Man</button>
   </div>
 
-  <div id="headCoach" class="profile">
-    <h2>Head Coach – Omar</h2>
+  <div id="head" class="section role-section active">
+    <h2>🏅 Head Coach – Omar</h2>
     <ul>
-      <li>Founder of Youth Runs and visionary behind the program’s mission</li>
-      <li>Designs and leads all training sessions with a focus on technique and growth</li>
-      <li>Acts as a mentor and role model for all young runners</li>
-      <li>Maintains the team’s positive energy and values through leadership</li>
-      <li>Past accomplishments: 53s 400m, 39.5s 300m hurdles, and founded club to give back</li>
+      <li>🚀 Founder and visionary leader who created Youth Runs from scratch to empower young runners.</li>
+      <li>📚 Instructs youth on proper sprint form, mental toughness, and athletic discipline.</li>
+      <li>🗓️ Coordinates schedules, outreach events, and manages program growth.</li>
+      <li>🔥 Inspires all athletes through leadership, energy, and personal success in track.</li>
+    </ul>
+    <div class="photo-section">
+      <img src="relay-team.jpg" alt="4x1 relay team" />
+      <div class="caption">My 4x1 relay team – we’re 2nd in school history. 🏃🏽‍♂️🔥</div>
+    </div>
+    <div class="photo-section">
+      <img src="300mh.jpg" alt="300m hurdles podium" />
+      <div class="caption">Placed 3rd in Palomar League for 300m hurdles. 💪</div>
+    </div>
+    <div class="photo-section">
+      <img src="110mh-cif.jpg" alt="CIF 110m hurdles" />
+      <div class="caption">6th overall in CIF for the 110m hurdles. Big moment! 🏅</div>
+    </div>
+    <div class="photo-section">
+      <img src="mt-sac-win.jpg" alt="Mt. SAC victory" />
+      <div class="caption">Winning Mt. SAC, leading my squad to 3rd in the state (shuttle hurdles) and 20th nationally! 🥇🌎</div>
+    </div>
+  </div>
+
+  <div id="assistant" class="section role-section">
+    <h2>💪 Assistant Coach – Brady</h2>
+    <ul>
+      <li>🧠 Helps design training drills and warmups tailored for beginner runners.</li>
+      <li>🫶 Supports youth athletes emotionally and physically during practices.</li>
+      <li>🎯 Provides encouragement and coaching tips to maintain athlete motivation.</li>
+      <li>🔧 Keeps practice organized and flowing smoothly by handling logistics.</li>
     </ul>
   </div>
 
-  <div id="assistantCoach" class="profile">
-    <h2>Assistant Coach – Brady Thomas</h2>
+  <div id="camera" class="section role-section">
+    <h2>🎥 Camera Man – Mohammed</h2>
     <ul>
-      <li>Helps plan and coordinate weekly training drills and practice plans</li>
-      <li>Works 1-on-1 with younger runners to ensure they feel supported and confident</li>
-      <li>Ensures safety and structure during meet-ups and activities</li>
-      <li>Plays a key role in developing team morale and consistency</li>
-    </ul>
-  </div>
-
-  <div id="cameraMan" class="profile">
-    <h2>Camera Man – Mohammed</h2>
-    <ul>
-      <li>Captures highlights of practices, races, and moments throughout the club</li>
-      <li>Edits weekly recap videos to be posted on social media and the website</li>
-      <li>Provides creative visuals that showcase the passion behind Youth Runs</li>
-      <li>Helps document progress for each athlete visually</li>
+      <li>📸 Responsible for capturing every epic moment at Youth Runs.</li>
+      <li>🎬 Creates stunning edits and highlight reels to promote the club.</li>
+      <li>🖼️ Designs visual stories that reflect our growth and community vibe.</li>
+      <li>🧠 Supports our branding with creative content and social media outreach.</li>
     </ul>
   </div>
 
   <script>
-    function showProfile(id) {
-      document.querySelectorAll('.profile').forEach(p => p.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
+    function showRole(roleId) {
+      document.querySelectorAll('.role-section').forEach(section => section.classList.remove('active'));
+      document.getElementById(roleId).classList.add('active');
     }
   </script>
 </body>
