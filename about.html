@@ -2,105 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Youth Runs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet the Team – Youth Runs</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(to bottom, #e6f7ff, #ffffff);
-      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #eef6fc, #ffffff);
       margin: 0;
-      padding: 0;
+      color: #1a1a1a;
     }
 
     header {
-      background-color: #0077cc;
+      background-color: #005fa3;
       color: white;
       padding: 1.5rem;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     nav {
-      background-color: #005fa3;
       display: flex;
       justify-content: center;
+      background-color: #0077cc;
       gap: 2rem;
-      padding: 0.75rem 0;
+      padding: 1rem 0;
     }
 
     nav a {
       color: white;
-      text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      text-decoration: none;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: #ffdd57;
     }
 
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
+    .staff-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
     }
 
-    .photo-section {
-      margin-bottom: 3rem;
-      text-align: center;
+    .staff-buttons button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
 
-    .photo-section img {
+    .staff-buttons button:hover {
+      background-color: #005fa3;
+    }
+
+    .staff-section {
+      display: none;
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #f9f9f9;
+      border-left: 6px solid #0077cc;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .staff-section.active {
+      display: block;
+    }
+
+    .staff-section h2 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    .photo-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .photo-gallery img {
       width: 100%;
       max-width: 700px;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
     }
 
-    .photo-section img:hover {
+    .photo-gallery img:hover {
       transform: scale(1.03);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    }
-
-    .caption {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      color: #444;
-      font-style: italic;
-    }
-
-    .journey-text {
-      background-color: #f9f9f9;
-      padding: 1.5rem;
-      border-left: 6px solid #0077cc;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        font-size: 1.4rem;
-      }
-      nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-      }
-      .section {
-        padding: 1rem;
-      }
-      .journey-text {
-        font-size: 0.95rem;
-      }
     }
   </style>
 </head>
 <body>
-  <header>About Omar – Youth Runs</header>
-
+  <header>Meet Our Team – Youth Runs</header>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -109,32 +111,54 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="section journey-text">
-    I started running track in 5th grade. The first year, I didn’t even make the team. I was crushed.
-    But I kept working. After I got more exposure to the sport, I made the team and kept improving.
-    Today, I run for Westview High School. I've competed in multiple events and grown not just as an athlete, but as a teammate and leader.
-    I started Youth Runs because I want others to experience the same growth, joy, and confidence that track gave me.
+  <div class="staff-buttons">
+    <button onclick="showSection('omar')">Omar</button>
+    <button onclick="showSection('brady')">Brady</button>
+    <button onclick="showSection('mohammed')">Mohammed</button>
   </div>
 
-  <div class="section photo-section">
-    <img src="relay-team.jpg" alt="4x1 relay team"/>
-    <div class="caption">My 4x1 relay team – we’re 2nd in school history. 🏃🏽‍♂️🔥</div>
+  <div id="omar" class="staff-section active">
+    <h2>Omar – Head Coach & Founder</h2>
+    <p><strong>Role:</strong> Founder and Head Coach of Youth Runs</p>
+    <ul>
+      <li>Created and leads the entire Youth Runs program</li>
+      <li>Organizes practices, runs the sessions, and teaches proper track techniques</li>
+      <li>Motivates youth and develops a welcoming, community-focused culture</li>
+    </ul>
+    <div class="photo-gallery">
+      <img src="relay-team.jpg" alt="4x1 relay team">
+      <img src="300mh.jpg" alt="300m hurdles podium">
+      <img src="110mh-cif.jpg" alt="CIF 110m hurdles">
+      <img src="mt-sac-win.jpg" alt="Mt. SAC win">
+    </div>
   </div>
 
-  <div class="section photo-section">
-    <img src="300mh.jpg" alt="300m hurdles podium"/>
-    <div class="caption">Placed 3rd in Palomar League for 300m hurdles. 💪</div>
+  <div id="brady" class="staff-section">
+    <h2>Brady Thomas – Assistant Coach</h2>
+    <p><strong>Role:</strong> Supporting coach focused on youth development and structure</p>
+    <ul>
+      <li>Helps plan drills and organize daily workouts</li>
+      <li>Supports younger runners to build confidence and improve form</li>
+      <li>Ensures the sessions stay structured and supportive</li>
+    </ul>
   </div>
 
-  <div class="section photo-section">
-    <img src="110mh-cif.jpg" alt="CIF 110m hurdles"/>
-    <div class="caption">6th overall in CIF for the 110m hurdles. Big moment! 🏅</div>
+  <div id="mohammed" class="staff-section">
+    <h2>Mohammed – Cameraman & Media</h2>
+    <p><strong>Role:</strong> Capturing and editing moments from Youth Runs</p>
+    <ul>
+      <li>Films practices and special events</li>
+      <li>Edits highlight reels for our social media and website</li>
+      <li>Helps share our story with the community</li>
+    </ul>
   </div>
 
-  <div class="section photo-section">
-    <img src="mt-sac-win.jpg" alt="Mt. SAC victory"/>
-    <div class="caption">Winning Mt. SAC, leading my squad to 3rd in the state (shuttle hurdles) and 20th nationally! 🥇🌎</div>
-  </div>
-
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.staff-section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
