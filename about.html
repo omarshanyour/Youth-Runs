@@ -1,205 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Youth Runs</title>
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: #0e1a2b;
-      color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1e3c72;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    nav {
-      background-color: #162c47;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0.75rem 0;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffcc70;
-    }
-
-    .section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .role-buttons {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .role-buttons button {
-      background-color: #00c2cb;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      margin: 0.5rem;
-      border-radius: 30px;
-      font-size: 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
-      color: #ffffff;
-    }
-
-    .role-buttons button:hover {
-      background-color: #04d4df;
-      transform: scale(1.05);
-    }
-
-    .role-section {
-      display: none;
-      padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      margin-bottom: 2rem;
-    }
-
-    .role-section.active {
-      display: block;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    .photo-section {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .photo-section img {
-      width: 100%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .photo-section img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    }
-
-    .caption {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      color: #ccc;
-      font-style: italic;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        font-size: 1.6rem;
-      }
-      nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>About – Youth Runs</header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="join.html">Join</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="section role-buttons">
-    <button onclick="showRole('head')">🏅 Head Coach</button>
-    <button onclick="showRole('assistant')">💪 Assistant Coach</button>
-    <button onclick="showRole('camera')">🎥 Camera Man</button>
+<section id="about" class="py-12 px-6 bg-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">About Our Coaches</h2>
   </div>
 
-  <div id="head" class="section role-section active">
-    <h2>🏅 Head Coach – Omar</h2>
-    <ul>
-      <li>🚀 Founder and visionary leader who created Youth Runs from scratch to empower young runners.</li>
-      <li>📚 Instructs youth on proper sprint form, mental toughness, and athletic discipline.</li>
-      <li>🗓️ Coordinates schedules, outreach events, and manages program growth.</li>
-      <li>🔥 Inspires all athletes through leadership, energy, and personal success in track.</li>
-    </ul>
-    <div class="photo-section">
-      <img src="relay-team.jpg" alt="4x1 relay team" />
-      <div class="caption">My 4x1 relay team – we’re 2nd in school history. 🏃🏽‍♂️🔥</div>
-    </div>
-    <div class="photo-section">
-      <img src="300mh.jpg" alt="300m hurdles podium" />
-      <div class="caption">Placed 3rd in Palomar League for 300m hurdles. 💪</div>
-    </div>
-    <div class="photo-section">
-      <img src="110mh-cif.jpg" alt="CIF 110m hurdles" />
-      <div class="caption">6th overall in CIF for the 110m hurdles. Big moment! 🏅</div>
-    </div>
-    <div class="photo-section">
-      <img src="mt-sac-win.jpg" alt="Mt. SAC victory" />
-      <div class="caption">Winning Mt. SAC, leading my squad to 3rd in the state (shuttle hurdles) and 20th nationally! 🥇🌎</div>
-    </div>
-  </div>
-
-  <div id="assistant" class="section role-section">
-    <h2>💪 Assistant Coach – Brady</h2>
-    <ul>
-      <li>🧠 Helps design training drills and warmups tailored for beginner runners.</li>
-      <li>🫶 Supports youth athletes emotionally and physically during practices.</li>
-      <li>🎯 Provides encouragement and coaching tips to maintain athlete motivation.</li>
-      <li>🔧 Keeps practice organized and flowing smoothly by handling logistics.</li>
+  <!-- Mohammed (Moe) Section -->
+  <div class="max-w-4xl mx-auto my-12 bg-gray-50 p-6 rounded-xl shadow-md">
+    <img src="moe.jpg" alt="Moe Track Medal" class="w-full md:w-2/3 mx-auto rounded-lg mb-4">
+    <h3 class="text-2xl font-semibold text-center mb-4">🏃 Mohammed Shanyour</h3>
+    <ul class="text-lg space-y-2 list-disc list-inside">
+      <li>🥈 Took 2nd place at Frosh/Soph Championship in the 110m Hurdles</li>
+      <li>🏅 Medaled and placed at the Willy Banks Track Meet</li>
+      <li>✅ Also qualified for Frosh/Soph Championships in the 300m Hurdles</li>
     </ul>
   </div>
 
-  <div id="camera" class="section role-section">
-    <h2>🎥 Camera Man – Mohammed</h2>
-    <ul>
-      <li>📸 Responsible for capturing every epic moment at Youth Runs.</li>
-      <li>🎬 Creates stunning edits and highlight reels to promote the club.</li>
-      <li>🖼️ Designs visual stories that reflect our growth and community vibe.</li>
-      <li>🧠 Supports our branding with creative content and social media outreach.</li>
-    </ul>
-    <div class="photo-section">
-      <img src="moe.jpg" alt="Mohammed hurdles" />
-      <div class="caption">
-        🥈 Took 2nd place at the Frosh/Soph Championships in the 110m hurdles — a bittersweet finish.<br>
-        🥉 Medaled at the elite Willy Banks Invitational.<br>
-        ✅ Qualified for Frosh/Soph in the 300m hurdles as well.<br>
-        🎥 All while being the guy behind the camera making everyone else look great.
-      </div>
-    </div>
+  <!-- Assistant Coach Section -->
+  <div class="max-w-5xl mx-auto text-center mb-6">
+    <h2 class="text-3xl font-bold">Assistant Coach - Brady</h2>
   </div>
 
-  <script>
-    function showRole(roleId) {
-      document.querySelectorAll('.role-section').forEach(section => section.classList.remove('active'));
-      document.getElementById(roleId).classList.add('active');
-    }
-  </script>
-</body>
-</html>
+  <!-- Brady Soccer Section -->
+  <div class="max-w-4xl mx-auto my-10 bg-gray-50 p-6 rounded-xl shadow-md">
+    <img src="brady2.jpg" alt="Brady Soccer" class="w-full md:w-2/3 mx-auto rounded-lg mb-4">
+    <h3 class="text-2xl font-semibold text-center mb-4">⚽ Brady's Soccer Journey</h3>
+    <ul class="text-lg space-y-2 list-disc list-inside">
+      <li>⚽ Played soccer for 9 years + 2 years of high school soccer for Westview</li>
+      <li>🌍 Competed at the highest level including MLS NEXT (2 years) & ECNL (5 years)</li>
+      <li>🏆 Helped club team reach ECNL National Championship in St. Louis (2022)</li>
+      <li>🥇 Highest goal scorer on Westview HS team for the 2023–2024 season (0.7 goals/game)</li>
+    </ul>
+  </div>
+
+  <!-- Brady Track Section -->
+  <div class="max-w-4xl mx-auto my-10 bg-gray-50 p-6 rounded-xl shadow-md">
+    <img src="brady1.jpg" alt="Brady Track" class="w-full md:w-2/3 mx-auto rounded-lg mb-4">
+    <h3 class="text-2xl font-semibold text-center mb-4">🏃 Brady's Track Achievements</h3>
+    <ul class="text-lg space-y-2 list-disc list-inside">
+      <li>🥈 4x400m Relay team qualified and advanced to CIF D1 Sectionals (May 2025)</li>
+      <li>💨 Split a blazing 50.6s as the last leg of the 4x400m team</li>
+      <li>🏅 4x200m Relay team competed in the California Winter Championship in Arcadia (Feb 2025)</li>
+      <li>🚀 Set a PR and earned 2nd fastest 4x200m time in Westview HS history</li>
+      <li>🎽 Track athlete for 3 years – sprints including 100m, 200m, and 400m</li>
+    </ul>
+  </div>
+</section>
